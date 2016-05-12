@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Acciones</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+
+<!--Grupo CSS-->
+<link rel="stylesheet" href="css/app9.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JS-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="js/acciones04.js"></script>
+<script src="js/acciones06.js"></script>
+<script src="js/acciones08.js"></script>
+<script src="phonegap.js"></script><!--necesario-->
+</head>
+<body><div data-role="page" id="Principal" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Aplicacion Acciones</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div>
+        <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+          <li class="ui-first-child ui-last-child">
+            <a href="#page4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>Datos del Dispositivo</h2>
+            </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+            <a href="#page6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>Vibrar y Beepear</h2>
+            </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>Deslizar</h2>
+            </a>
+          </li>
+        </ul>
+      </div>    
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <h4>García Sánchez Sara Belén</h4>
+    <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+
+<div data-role="page" id="page4" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Datos del Dispositivo</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div id="disp">
+<table width="200" border="1" id="datos">
+  <tr>
+    <td width="83">Datos</td>
+    <td width="101">Dispositivo</td>
+  </tr>
+  <tr>
+    <td>Nombre</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Phonegap</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Plataforma</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Versión</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>UUID</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+      <h4>García Sánchez Sara Belén</h4>
+      <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+<div data-role="page" id="page6" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Vibrar y Beepear</h1>
+  </div>
+    <div align="center" data-role="controlgroup" data-type="vertical">
+      <div style="width:40%;">
+        <a href="#" data-role="button" id="beep">Beep</a>
+        <a href="#" data-role="button" id="vibrar">Vibrar</a>
+      </div>
+    </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+      <h4>García Sánchez Sara Belén</h4>
+      <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+<div data-role="page" id="page8" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Desliza a la Derecha</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+      <div>
+        <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+          <li class="ui-first-child ui-last-child">
+            <a href="#page7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>Izquierda</h2>
+            </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+            <a href="#page5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>Derecha</h2>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+      <h4>García Sánchez Sara Belén</h4>
+      <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+<div data-role="page" id="page7" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Desliza a la Izquierda</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div id="izquierda" style="width:80%;height:380px;background-color:#0FF;">
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+      <h4>García Sánchez Sara Belén</h4>
+      <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+<div data-role="page" id="page5" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Desliza a la Derecha</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div id="derecha" style="width:80%;height:380px;background-color:#0FF;">
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+      <h4>García Sánchez Sara Belén</h4>
+      <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+</body>
+</body>
+</html>
